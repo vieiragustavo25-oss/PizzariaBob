@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu do site</title>
+</head>
+
+<style>
+.pedidos{
+      background-color: #6D9E51;
+      font-size: 20px;
+      color: #FEFFD3;
+}
+
+.butao{
+      background-color: #FEFFD3;
+      font-size: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+.pedir{
+      font-size: 35px;
+      background-color: #FEFFD3;
+      border: none;
+      padding: 12px;
+      color: #A82323;
+
+}
+
+.pagar{
+      background-color: #A82323;
+      font-size: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer; 
+}
+
+.cadapo{
+    font-size: 35px;
+      background-color: #FEFFD3;
+      border: none;
+      padding: 12px;
+      color: #A82323;
+}
+
+.uniao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.cadapo, .pedir{
+    flex: 1;
+    max-width: 400px;
+}
+</style>
+
+<body style="background-color:#BCD9A2;">
+<center>
+      <div class="pedidos">
+      <h1>Peça Sua PIZZA aqui!😍</h1>
+    <form action="/presencial.html">
+      <button class="butao">Pedir presencialmente</button>
+      <button class="butao">Drive thru</button>
+      <button class="butao">Agendar Pedido</button>
+    </form>
+      <br>
+      <br>
+      </div>
+</center>
+      <br>
+      <br>
+      <hr>
+      <br> 
+      <br>
+
+
+<div class="uniao">
+
+
+      <div class="pedir">
+<center>
+      <form action="/action_page.php"></form>
+      <h3>Faça seu  Pedido</h3>
+      <label for="fname">local de entrega;</label><br>
+      <input type="text" id="fname" name="fname" value="local"><br>
+      <label for="fname">horário de entrega:</label><br>
+      <input type="text" id="fname" name="fname" value="horário"><br>
+      <label for="fname">metodo de pagamento</label><br>
+      <input type="text" id="fname" name="fname" value="pix/débito/crédito"><br>
+      <label for="cars">Escolha sua pizza:</label>
+      <select id="cars" name="cars">
+      <option value="volvo">Peperoni</option>
+      <option value="saab">4 queijos</option>
+      <option value="fiat">Portuguesa</option>
+      <option value="audi">Marguerita</option>
+      <option value="audi">Calabresa</option>
+      <option value="audi">Abacaxi</option>
+      </select><br>
+      <label for="cars">Bebida:</label>
+      <select id="cars" name="cars">
+      <option value="volvo">Coca</option>
+      <option value="volvo">Pepsi</option>
+      <option value="volvo">Fanta</option>
+      <option value="volvo">Sprite</option>
+      </select><br>
+      <button class="pagar">-Pedir-</button>
+      </form>
+</center>
+
+      </div>
+      <br>
+      <br>
+
+     <div class="cadapo">
+<center>
+    <h2>cardápio:</h2>
+<h4>pizzas preços:</h4>
+<ul>
+  <li>Peperoni - R$30 reais</li>
+  <li>Calabresa - R$40 reais</li>
+  <li>4 Queijos - R$20 reais</li>
+  <li>Abacaxi - R$20 reais</li>
+  <li>Marguerita - R$30 reais</li>
+  <li>Portuguesa - R$40 reais</li>
+  <h4>Bebidas</h4>
+  <li>latinha - R$10 reais (preço único)</li>
+  <li>2 a 3 litros - R$15 reais (preço único)</li>
+</ul>  
+
+</center>
+</div>
+ 
+</div>
+
+</body>
+
+</html>
