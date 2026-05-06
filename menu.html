@@ -90,11 +90,14 @@
       <form action="/action_page.php"></form>
       <h3>Faça seu  Pedido</h3>
       <label for="fname">local de entrega;</label><br>
-      <input type="text" id="fname" name="fname" value="local"><br>
+      <input type="text" id="local" name="fname" value="local"><br>
+
       <label for="fname">horário de entrega:</label><br>
-      <input type="text" id="fname" name="fname" value="horário"><br>
+      <input type="text" id="entrega" name="fname" value="horário"><br>
+
       <label for="fname">metodo de pagamento</label><br>
-      <input type="text" id="fname" name="fname" value="pix/débito/crédito"><br>
+      <input type="text" id="pagamento" name="fname" value="pix/débito/crédito"><br>
+
       <label for="cars">Escolha sua pizza:</label>
       <select id="cars" name="cars">
       <option value="volvo">Peperoni</option>
@@ -111,7 +114,8 @@
       <option value="volvo">Fanta</option>
       <option value="volvo">Sprite</option>
       </select><br>
-      <button class="pagar">-Pedir-</button>
+      <button onclick="comprar()">-Pedir-</button>
+      <p id="msg"></p>
       </form>
 </center>
 
@@ -140,6 +144,18 @@
  
 </div>
 
+<script>
+function comprar(){
+
+      var user = document.getElementById("pagamento").value;
+
+      if (user === "pix, crédito, débito"){
+            document.getElementById("msg").innerText="pagamento feito";
+      }else{
+            document.getElementById("msg").innerText="pagamento inválido"; 
+      }
+}
+</script>
 </body>
 
 </html>
